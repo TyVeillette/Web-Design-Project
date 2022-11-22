@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/*
+   Final Project
+   
+   Sassy Stickers
+   Author: Tyler Veillette
+   Date: 10/20/2022  
+   
+   Filename: styles.css
+
+*/
+/* Color Themes for Light and Dark Mode */
+html{
+   --bg: #F1FAEE;
+   --bg-panel: #A8DADC;
+   --color-heading: black; 
+   --color-text: #333333;
+   --bg-image: url('CanyonLake.jpeg')
+  }
+
+html[data-theme='dark']{
+   --bg: #333333;
+   --bg-panel: #434343;
+   --color-heading: #A8DADC;
+   --color-text: #B5B5B5;
+   --bg-image: url('CanyonLakeNight.jpg');
+}
+
+/* Light-Dark Button Styles */
+
+#button {height: 50px; width: 50px; 
+   border-radius: 50%;
+   border-color: white;
+   float: right;
+   margin: 10px;
+   color: var(--bg);
+   background-color: var(--color-heading);
+   cursor: pointer;
+}
+
+/* Base Structural Styles */
+html {background: var(--bg);
+      font-family: 'Times New Roman', sans-serif;
+      max-width: 800px;  
+      height: auto;
+      margin: auto;
+      background-image: var(--bg-image); 
+      background-repeat: no-repeat; 
+      background-attachment: fixed; 
+      background-size: cover;}
+
+body {background: var(--bg-panel);}
+      
+footer {background: #457B9D; 
+      font-size: .9em; 
+      padding-top: 5px; 
+      padding-bottom: 5px;clear: 
+      both;
+      align-items: center;}
+
+address {font: normal;font-size: .9em; align-items: center;padding-top: 10px;padding-bottom: 10px;}
+
+/* Page Heading Styles */
+
+header#pageHeader h1 {text-align: center;margin: auto;padding: 20px;}
+
+/* Header Navigation Styles */
+
+.horizontalNavigation ul {list-style-type: none; 
+      margin: 0; padding: 0; 
+      overflow: hidden; background-color: #457B9D;}
+.horizontalNavigation li {float: left;}
+.horizontalNavigation li a {display: block; 
+   color: var(--bg); 
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;}
+.horizontalNavigation li a:hover {background-color: #E63946;}
+.horizontalNavigation li a:active {background-color: #E63946;}
+
+/* Home Section Styles */
+
+nav#section ul {list-style: none;}
+nav#section li {float: left; margin: 20px;}
+
+nav#section li img {
+   display: block;
+   width: 300px; height: 200px;
+   border-radius: 10px;}
+
+/* Service Styles */
+
+.stickers ul {display: block; list-style: none; 
+            text-align: justify;}
+.stickers li {float: left; padding: 5px;}
+
+.stickers img {max-width: 240px; max-height: 240px; padding: 20px; border-radius: 25%;}
+.stickers h3 {text-align: center; text-decoration: underline;margin: auto;}
+.stickers p {display: block; max-width: 50%; margin: auto; padding: 20px;}
+.stickers h4 {text-align: center; margin: auto;}
+
+/* About Us Page */
+
+h2#aboutUs {text-align: center;}
+
+table#aboutUs {margin: 50px;}
+table#aboutUs p {text-align: justify;}
+table#aboutUs td { display: table-cell;}
+
+img#LexiAvaPic {float: left; margin-left: 10%; width: 70%; border-radius: 15px;}
+img#familyPic {margin-left: 30%; width: 50%; border-radius: 15px;}
+
+/* Policy Page */
+
+ul#policyList {list-style:decimal; margin: 10px; padding: 0px 15px 15px 15px; margin-left: 50px;}
+article#policy > p {margin: 10px; padding: 15px;}
+article#policy p:last-of-type {margin-bottom: 20px;}
+article#policy > h2 {margin: 15px;}
+
+/* Form Styles */
+
+h2#contactPage {text-align: center;}
+
+form {max-width: 80%; margin: auto; padding-bottom: 20px;}
+
+input, textarea {
+   display: block; width: 100%; padding: 1em;
+   border: 0; margin-top: 1em;
+   border-radius: 8px;
+   resize: none;
+}
+textarea {height: 125px; font-family: 'Times New Roman', sans-serif;}
+#contactSubmit {color: #F1FAEE; background: #E63946; cursor: pointer; margin: 1em;}
+
+/* Locations Page */
+
+.mapouter {margin: 20px auto 20px }
+.locationHead {text-align: center;}
+
+/* Footer Styles */
+
+footer {font-weight: 250; clear: left; text-align: center; color:var(--bg);}
+footer a {text-decoration: underline; color:var(--bg);}
+footer a:hover {background-color: #E63946;}
