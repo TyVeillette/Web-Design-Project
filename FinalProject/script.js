@@ -24,6 +24,7 @@ const changeThemeToLight = () => {
 // Defualt on pageload is light theme. This will automatically switch to dark if it is set to dark in localStorage
 if(theme === 'dark'){
     changeThemeToDark()
+    document.getElementById("button").textContent = "Light" //switch button text
 }
 
 //Monitors the button and switches theme when clicked. It will also update the button text to reflect the opposite theme text
